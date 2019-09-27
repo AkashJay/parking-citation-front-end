@@ -14,10 +14,16 @@ import * as Charts from 'fusioncharts/fusioncharts.charts';
 // Load PowerCharts module
 import * as Powercharts from 'fusioncharts/fusioncharts.powercharts';
 // Load fusion theme
+import * as Ocean from 'fusioncharts/themes/fusioncharts.theme.ocean';
+import * as Fint from 'fusioncharts/themes/fusioncharts.theme.fint';
+import * as Candy from 'fusioncharts/themes/fusioncharts.theme.candy';
+import * as Gammel from 'fusioncharts/themes/fusioncharts.theme.gammel';
+import * as Zune from 'fusioncharts/themes/fusioncharts.theme.zune';
 import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import * as Carbon from 'fusioncharts/themes/fusioncharts.theme.carbon';
 
 // Add dependencies to FusionChartsModule
-FusionChartsModule.fcRoot(FusionCharts, Powercharts, FusionTheme, Charts);
+FusionChartsModule.fcRoot(FusionCharts, Powercharts, FusionTheme, Charts, Candy);
 
 @NgModule({
   declarations: [

@@ -1,65 +1,114 @@
+<div class="container-fluid">
+  <div class="coverp"
+       style="background: url(assets/image/no-parking.jpg);  height: 180px;  background-size: cover;"></div>
+</div>
+<br>
 <div class="container">
   <div class="row">
-    <div class="col-sm-12" align="right">
-      <img src="assets/image/no-parking.jpg" alt="Italian Trulli">
+
+    <div class="col-sm-3">
+      <span class="border" style="position:relative;">
+        <span class="mainCircle">
+          <span class="pulse" style="background-color: #6957da;">
+            <i class="fas fa-bars"></i>
+          </span>
+        </span>
+      <div class="valueS" >  {{ totalRec }}M </div>
+      <div class="sub-indicator">  Records </div>
+     </span>
     </div>
 
+    <div class="col-sm-3">
+      <span class="border" style="position:relative;">
+        <span class="mainCircle">
+          <span class="pulse" style="background-color: #dd614a;">
+            <i class="fas fa-angle-double-left"></i>
+          </span>
+        </span>
+      <div class="valueS" > {{ yearFIfteenRec }}M </div>
+      <div class="sub-indicator">  Records in 2015  </div>
+     </span>
+    </div>
+
+    <div class="col-sm-3">
+      <span class="border" style="position:relative;">
+        <span class="mainCircle">
+          <span class="pulse" style="background-color: #44af69;">
+            <i class="fas fa-angle-double-right"></i>
+          </span>
+        </span>
+      <div class="valueS" > {{ yearSeventeenRec }}M </div>
+      <div class="sub-indicator">  Records in 2017  </div>
+     </span>
+    </div>
+
+    <div class="col-sm-3">
+      <span class="border" style="position:relative;">
+        <span class="mainCircle">
+          <span class="pulse" >
+            <i class="fas fa-dollar-sign"></i>
+          </span>
+        </span>
+      <div class="valueS" > {{ fineAmmount }}M </div>
+      <div class="sub-indicator" >   FIne Collected   </div>
+     </span>
+    </div>
+
+
   </div>
-  <br>
-  <div class="row" >
-    <div class="col-sm-6" >
+
+  <hr class="path" >
+</div>
+
+<div class="container" style="background-color: #222327">
+
+  <br><br>
+  <div class="row">
+    <div class="col-sm-6">
       <fusioncharts
         [width]="width"
         [height]="height"
         [type]="type"
         [dataFormat]="dataFormat"
         [dataSource]="dataSource"
-      >
-      </fusioncharts>
+      > </fusioncharts>
     </div>
     <div class="col-sm-6">
-        <fusioncharts
-          [width]="width1"
-          [height]="height1"
-          [type]="type1"
-          [dataFormat]="dataFormat1"
-          [dataSource]="dataSource1"
-        >
-        </fusioncharts>
-
-
-
+      <fusioncharts
+        [width]="width1"
+        [height]="height1"
+        [type]="type1"
+        [dataFormat]="dataFormat1"
+        [dataSource]="dataSource1"
+      > </fusioncharts>
     </div>
   </div>
 
-<br><br><br>
-  <div class="row" >
+  <br><br>
+  <div class="row" style="background-color: #222327">
     <div class="col-sm-6">
-
-
+      <fusioncharts
+        [width]="widthC"
+        [height]="heightC"
+        [type]="typeC"
+        [dataFormat]="dataFormatC"
+        [dataSource]="dataSourceC"
+      > </fusioncharts>
     </div>
     <div class="col-sm-6">
-          <span>
-            <span  style="color: green; font-size: 45px; font-family: cursive;"> {{ fineAmmount }} Million$ </span>
-                <br> <span style="font-size: 20px; font-family: cursive;color: dimgray">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fine was collected in <b>2016</b></span>
-           </span>
+      <fusioncharts
+        [width]="widthType"
+        [height]="heightType"
+        [type]="typeType"
+        [dataFormat]="dataFormatType"
+        [dataSource]="dataSourceType"
+      > </fusioncharts>
     </div>
   </div>
+
+  <br><br>
+
+  <div id="chart-container"></div>
 </div>
 
 <router-outlet></router-outlet>
-
-
-<!--<div class="row">-->
-  <!--<div class="col-sm-6" >-->
-    <!--&lt;!&ndash;<img src="assets/image/asd.png" alt="Italian Trulli">&ndash;&gt;-->
-  <!--</div>-->
-  <!--<div class="col-sm-6" align="right">-->
-    <!--<span>-->
-        <!--<span  style="color: green; font-size: 45px; font-family: cursive;"> {{ fineAmmount }} Million$ </span>-->
-                <!--<br> <span style="font-size: 20px; font-family: cursive;color: dimgray">-->
-                            <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fine was collected in <b>2016</b></span>-->
-    <!--</span>-->
-  <!--</div>-->
-<!--</div>-->
